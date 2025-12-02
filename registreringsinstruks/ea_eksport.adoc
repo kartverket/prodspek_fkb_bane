@@ -207,12 +207,8 @@ image::figurer/spormidt3.png[link=figurer/spormidt3.png, Alt="Eksempel på plass
 image::figurer/spormidt4.png[link=figurer/spormidt4.png, Alt="Eksempel på plassering av knutepunkt (nodepunkt) i sporkryss/kryssveksel. Knutepunktet plasseres i skjæringspunktet for to kryssende Spormidt.  "]
  
  
-'''
-.Illustrasjon av hvor nodepunkt skal plasseres i forhold til sporveksel. Knutepunktet plasseres i skjæringspunktet for Spormidt og normalen fra drivmaskinen ned på Spormidt
-image::figurer/sporveksel.png[link=figurer/sporveksel.png, Alt="Illustrasjon av hvor nodepunkt skal plasseres i forhold til sporveksel. Knutepunktet plasseres i skjæringspunktet for Spormidt og normalen fra drivmaskinen ned på Spormidt"]
- 
- 
- 
+
+
 [discrete]
 ==== Føringer
 [cols="h,2"]

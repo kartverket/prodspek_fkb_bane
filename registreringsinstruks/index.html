@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Geovekst">
 <title>Registreringsinstruks: Fotogrammetrisk FKB-Bane</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -117,7 +117,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -141,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -219,6 +219,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -328,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -447,7 +448,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_innledning_historikk_og_endringslogg">1. Innledning, historikk og endringslogg</a>
 <ul class="sectlevel2">
 <li><a href="#_innledning">1.1. Innledning</a></li>
-<li><a href="#_endringslogg">1.2. Endringslogg</a></li>
+<li><a href="#_endringslogg">1.2. Endringslogg</a>
+<ul class="sectlevel3">
+<li><a href="#_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2026_01_01">1.2.1. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2026-01-01</a></li>
+<li><a href="#_endringer_fra_versjon_4_6_2016_08_08_til_versjon_5_0_2022_01_01">1.2.2. Endringer fra versjon 4.6 2016-08-08 til versjon 5.0 2022-01-01</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_generelle_retningslinjer_som_gjelder_fotogrammetrisk_registrering_av_fkb">2. Generelle retningslinjer som gjelder fotogrammetrisk registrering av FKB</a></li>
@@ -506,10 +512,26 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_endringslogg">1.2. Endringslogg</h3>
+<div class="sect3">
+<h4 id="_endringer_fra_versjon_5_0_2022_01_01_til_versjon_5_0_2026_01_01">1.2.1. Endringer fra versjon 5.0 2022-01-01 til versjon 5.0 2026-01-01</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>I kapittel 3.1 Objekttype Jernbaneplattformkant er det lagt til nye figurer som viser hvordan Jernbaneplattformkant skal registreres og avgrenses mot omgivelsene.</p>
+</li>
+<li>
+<p>I kapittel 3.2 Objekttype Spormidt er det lagt til en ny figur som tydeligere skal vise plassering for registrering av nodepunkt for Spormidt i sporveksel.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_endringer_fra_versjon_4_6_2016_08_08_til_versjon_5_0_2022_01_01">1.2.2. Endringer fra versjon 4.6 2016-08-08 til versjon 5.0 2022-01-01</h4>
 <div class="paragraph">
 <p>Se produktspesifikasjon for FKB-Bane 5.0 for en oversikt over <a href="https://sosi.geonorge.no/produktspesifikasjoner/FKB-Bane#trueendringer-siden-fkb-bane-4-6-2016-08-08">Endringer siden FKB-Bane 4.6 - 2016-08-08</a>. Det er ikke gjort endringer når det gjelder bestemmelser for fotogrammetrisk registrering utover det som følger av endringene i produktspesifikasjonen.</p>
 </div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 </div>
@@ -784,13 +806,6 @@ Det skal registreres knutepunkt (nodepunkt) i sporveksler og sporkryss/kryssveks
 <a class="image" href="figurer/spormidt4.png"><img src="figurer/spormidt4.png" alt="spormidt4"></a>
 </div>
 <div class="title">Figur 7. Eksempel på plassering av knutepunkt (nodepunkt) i sporkryss/kryssveksel. Knutepunktet plasseres i skjæringspunktet for to kryssende Spormidt.</div>
-</div>
-<hr>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="figurer/sporveksel.png"><img src="figurer/sporveksel.png" alt="sporveksel"></a>
-</div>
-<div class="title">Figur 8. Illustrasjon av hvor nodepunkt skal plasseres i forhold til sporveksel. Knutepunktet plasseres i skjæringspunktet for Spormidt og normalen fra drivmaskinen ned på Spormidt</div>
 </div>
 <h4 id="_føringer_2" class="discrete">Føringer</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -1414,7 +1429,7 @@ av denne lisensen og ikke kan viderebrukes</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-12-02 08:17:42 +0100
+Last updated 2025-12-02 08:57:48 +0100
 </div>
 </div>
 </body>
