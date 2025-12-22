@@ -5,21 +5,13 @@ Geovekst
 ifdef::backend-pdf[{empty} +]
 
 ****
-ifeval::["{backend}" == "html5"]
 
-[TIP]
-//.Nedlasting av dokumentet
-Dette dokumentet kan også lastes ned link:{reginstr-url}/{reginstr-type}_registreringsinstruks_{datasett}_{versjon}_{underversjon}.pdf[som PDF].
-
-endif::[]
+WARNING: *Utgått versjon!* Se nyeste versjon på {reginstr-url-ny} 
 
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {reginstr-url} +
-//- {reginstr-url}[HTML-dokument] +
-//- {reginstr-url}/{reginstr-type}_registreringsinstruks_{datasett}_{versjon}_{underversjon}.pdf[PDF-dokument] +
 *Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{versjon} +
 - {prodspek-url}/{versjon}[HTML-dokument] +
-- {prodspek-url}/{versjon}/Produktspesifikasjon_{datasett}_50.pdf[PDF-dokument] +
 - {uml-url}[HTML-visning av UML-modellen] +
 
 https://kartverket.no/geodataarbeid/geovekst[Geovekst-samarbeidet] er eier og faglig ansvarlig for spesifikasjonen.

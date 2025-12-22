@@ -26,3 +26,4 @@ ifdef::backend-pdf[:toc: macro]
 :prodspek-url: {prodspekbase-url}{datasett}
 :uml-url: {umlbase-url}{datasett}/{versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{underversjon}
+:reginstr-url-ny: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_2026-01-01
